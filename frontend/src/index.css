@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+  text-align: right;
+  font-size: 4.5rem;
+  letter-spacing: 2px;
+  margin-right: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  gap: 20px;
+  font-size: 1.2rem;
+  padding: 40px 20px;
+}
+
+.header .link {
+  text-decoration: none;
+  font-family: Verdana;
+  color: rgb(49, 2, 49);  
+}
+
+.header .link:hover {
+  text-decoration: underline;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+}
+
+.patient-heading, .doctor-heading, .appointment-heading {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 20px;
+  color: purple;
+}
+
+.doctor-heading {
+  margin-top: 40px;
+  color: pink;
+}
+
+.appointment-heading, .appointment-name {
+  color: #CFE0E3;
+}
+
+.patient-form, .doctor-form, .appointment-form {
+  border-radius: 10px;
+  background-color: #B591CD;
+  margin-left: 50px;
+  height: 400px;
+  padding: 0px 80px;
+  padding-top: 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.doctor-form {
+  background-color:palevioletred;
+}
+
+.appointment-form {
+  background-color: #7395D3; 
+}
+
+.patient-form input, .doctor-form input, .appointment-form select, .time{
+  height: 13%;
+  width: 100%;
+  border: none;
+  border-bottom: 1px purple solid;
+  background-color: #B591CD;
+}
+.doctor-form input {
+  border-bottom: 1px pink solid;
+  background-color: palevioletred;
+}
+
+.appointment-form select, .time {
+  background-color: #AABDDF; 
+}
+
+.appointment-form button {
+  background-color: #CFE0E3; 
+}
+
+::placeholder {
+  color: black;
+}
+
+.patient-form select, .patient-form button, .doctor-form button {
+  background-color: purple;
+  color: white;
+}
+
+.patient-form button, .doctor-form button, .appointment-form button {
+  border: none;
+  padding: 15px 0;
+  width: 60%;
+  border-radius: 20px;
+}
+
+.doctor-form button {
+  background-color: pink;
+  color: palevioletred;
+}
+
+.patient-form button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: purple;
+}
+
+.doctor-form button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: palevioletred;
+}
+
+.appointment-form button:hover {
+  background-color: white;
+  cursor: pointer;
+}
+/* new info from here */
+.doctorList-container, .patientList-container, .appointmentList-container {
+  padding: 30px 120px;
+  border: pink;
+  border-radius: 10px;
+  background-color: palevioletred;
+  color: white;
+  margin-left: 50px;
+}
+
+.appointmentList-container {
+  background-color: #7395D3; 
+}
+
+.patientList-container {
+  background-color: #B591CD;
+}
+.doctor-name, .doctor-info, .patient-name, .patient-info, .appointment-info, .appointment-name {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+  text-align: center;
+}
+
+.doctor-name {
+  color: pink;
+}
+.patient-name {
+  color: purple;
+}
+
+.appointment-name {
+  font-size: 2rem;
+}
+
+.doctor-delete, .patient-delete, .appointment-delete {
+  height: 40px;
+  width: 80px;
+  border-radius: 5px;
+  border: none;
+  background-color: pink;
+  cursor: pointer;
+} 
+ 
+.patient-delete {
+  background-color: purple;
+  color: white;
+}
+
+.appointment-delete {
+  background-color: #CFE0E3;
+}
